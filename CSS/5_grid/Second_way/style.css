@@ -1,0 +1,28 @@
+.container{
+  border: 1px solid ;
+  height: 500px;
+  grid-template-areas: "nav nav nav"
+                       "section section x"
+                       "footer footer x";
+
+  display: grid;
+  
+  }
+  .item{
+   font-size: 30px;
+   text-align: center;
+   padding: 10px;
+  }
+  
+  .item-1, .item-2, .item-3{
+   grid-area: nav;
+   background-color: lightblue;
+  }
+  .item-4, .item-5 {
+   grid-area: section;
+   background-color: black;
+  }
+  .item-6{
+   grid-area: x;
+   background-color: pink;
+  }

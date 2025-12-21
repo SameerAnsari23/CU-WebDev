@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>Inc-Dec</h1>
+ <button class="inc">+</button>
+ <div class="cnt">0</div>
+ <button class="dec">-</button>
+
+
+ <script>
+  let inc = document.querySelector('.inc');
+  let cnts = document.querySelector('.cnt');
+  let dec = document.querySelector('.dec');
+
+  console.log(inc)
+  inc.addEventListener('click', () => {
+   // console.log('add')
+   // console.log(cnts.innerHTML+1)
+   // console.log(Number((cnts.innerHTML)+1))
+   cnts.innerText = parseInt(cnts.innerText)+1
+  })
+
+  dec.addEventListener('click', () => {
+   cnts.innerText = parseInt(cnts.innerText) - 1
+  })
+
+
+
+  
+ </script>
+</body>
+</html>

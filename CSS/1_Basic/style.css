@@ -1,0 +1,55 @@
+h1{
+   color:#FF0000;
+   font-size: 50px;
+   font-family: Arial, sans-serif;
+   background-color: aqua;
+   
+
+  }
+ 
+   .scnd{
+   color:antiquewhite;
+   background-color: black;
+   font-size: 45px;
+
+  }
+  #first{
+   color: rgb(133, 255, 127);
+   background-color: rgb(202, 17, 48);
+   font-size: 45px;
+   border: 50px;
+  }
+  .para{
+   background: beige;
+   font-family:  'Times New Roman';
+   font-size: 20px;
+   font-variant: small-caps;
+   font-display:fallback;
+   border-radius: 100px;
+   padding: 50px;  
+  }
+  .third{
+   background-color: green;
+  }
+  .nav{
+   text-align:left;
+   color: purple;
+  
+  }
+  ul{
+   display: flex;
+   text-align: center;
+   text-decoration-line: underline;
+   padding:15px;
+   gap: 200px;
+   background-color: bisque;
+
+
+
+    }
+    footer h5{
+      text-align:center ;
+      text-decoration: dotted;
+      font-size: 50px;
+
+    }

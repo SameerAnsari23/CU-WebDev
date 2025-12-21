@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+
+ </style>
+</head>
+<body>
+ <h1>Hello</h1>
+ <div>Vennela</div>
+ <div>Ashrutha</div>
+
+ <ul id="students">
+  <li id="A" class="BCA">Akhila</li>
+  <li class="BCA">Pavani</li>
+  <li class="BCA"> Laxmi</li>
+  <li class="BTech">Sravani</li>
+  <li class="BTech">Nagasiri</li>
+  <li id="mani" class="BTech">Manihas</li>
+ </ul>
+
+ <script>
+  let l = document.querySelector('#mani');
+  console.log(l.innerText)
+  l.style.color = 'pink'
+  
+  let akshaya = document.querySelector('#students');
+  akshaya.style.listStyle = 'none';
+
+  console.log("hello")
+
+
+  // let hel = document.getElementsByTagName('h1');
+  // console.log(hel[0]);
+  // console.log(hel[0].innerText)
+
+  // let div = document.getElementsByTagName('div');
+  // console.log(div[0].innerText);
+
+  // let li = document.getElementsByClassName('BCA');
+  // console.log(li[1].innerText);
+
+  // let lis = document.getElementsByClassName('BTech');
+  // console.log(lis[0])
+
+  // let list = document.getElementById('A');
+  // console.log(list);
+
+  
+  let hel = document.querySelector('h1');
+  console.log(hel.innerText)
+
+  let div = document.querySelectorAll('div');
+  let divs = div[1];
+  console.log(divs.innerText)
+  divs.textContent = 'Ashrutha Nimmal';
+  divs.style.color = 'Pink'
+  divs.style.backgroundColor = 'Black'
+
+  let ven = div[0];
+  console.log(ven.innerText);
+  ven.style.color = 'Blue';
+
+  let li = document.querySelectorAll('.BCA');
+  console.log(li[2].innerText);
+
+  let list = document.querySelector('#A');
+  console.log(list.innerText);
+
+  
+
+
+ </script>
+</body>
+</html>

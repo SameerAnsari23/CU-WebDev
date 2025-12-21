@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  .first-3{
+   background-color: black;
+   color: white;
+  }
+  .first-4 {
+   background-color: black;
+   color: pink;
+  }
+ </style>
+</head>
+<body>
+ <h1>Hello</h1>
+ <div class="sec">There only tweleve students present in class</div>
+
+ <script>
+  let h1 = document.querySelector('h1');
+  // Add the class to the HTML doccument 
+  h1.classList.add('first-1');
+  h1.classList.add('first-2');
+  h1.classList.add('first-3');
+
+  // Remove the class
+  h1.classList.remove('first-1')
+
+  // Toggle class
+  setInterval(() => {
+   h1.classList.toggle('first-4')
+  },1000)
+ </script>
+</body>
+</html>

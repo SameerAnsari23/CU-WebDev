@@ -1,0 +1,26 @@
+.container {
+   display: flex;
+  }
+
+  .box{
+   border: 1px solid;
+   height: 100px;
+   width: 300px;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  @media screen and (max-width: 990px){
+   .box{
+    background-color: aqua;
+   }
+   .container{
+    flex-direction: column;
+   }
+  }
+  @media (max-width: 990px) and (min-width: 600px) {
+   .container{
+    background-color: red;
+   }
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Web Development</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1 style="text-align: center;">LOGIN FORM</h1>
+ <form action="./form.php">
+  <section class="sec">
+  <div class="logi">
+   <label for="name">Full Name</label>
+    <input type="text" placeholder="Enter Full Name" required><br><br>
+   <label for="Password">Password</label>
+    <input type="password" placeholder="Enter Full Name" required><br><br>
+   <label for="date">Date</label>
+    <input type="date" required><br><br>
+   <label for="gender">Gender : </label>
+   <label for="male"><input type="radio" name="gender" id="male" required>male</label>
+   <label for="female"><input type="radio" name="gender" id="female" required>female</label>
+   <br><br>
+   <select name="country" id="" style="border-radius: 4px;" required>
+    <option value="select">Select Country</option>
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="london">London</option>
+   </select><br><br>
+   <label for="Address">Address</label>
+   <textarea name="" id="" cols="30" rows="" required></textarea><br><br>
+   <button type="submit" style="margin-left:150px;">Submit</button>
+  </div>
+ </section>
+ </form>
+</body>
+</html>
