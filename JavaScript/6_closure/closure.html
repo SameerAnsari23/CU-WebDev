@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ *{
+  background-color: black;
+ }
+ </style>
+</head>
+<body>
+ <script>
+  function outer() {
+   let x = 4;
+   function inner() {
+     x++;
+     console.log(x);
+   }
+   return inner;
+  }
+
+// outer()
+// outer()
+// outer()
+let f = outer();
+f();  // - 5
+f();
+f();
+// f();
+
+ function grandfather() {
+  var y = 1;
+  function parent() {
+   y++;
+   function child() {
+    y++;
+    console.log(y);
+   }
+   return child;
+  }
+  return parent;
+ }
+let call1 = grandfather();
+let call2 = call1();
+call2();
+call2();
+call2();
+
+
+
+// setTimeout
+// setTimeout(function() {
+//  console.log("Akshaya");
+// })
+
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>Add Elements</h1>
+ 
+ <ul class="students">
+  <!-- <li>Akhila</li> -->
+ </ul>
+ <button class="btn">Add</button>
+
+ <script>
+  let student = ["Akhila", "Ashrutha", "Rafiq", "Manihas"];
+
+
+  let btn = document.querySelector('.btn');
+  let studentList = document.querySelector('.students');
+  let i = 0;
+  btn.addEventListener('click', () => {
+    if (i < student.length) {
+     // console.log(studentList.innerHTML);
+     studentList.innerHTML += `<li>${student[i]}</li>`;
+     i++;
+    }
+    console.log(studentList.innerHTML);
+  })
+ </script>
+</body>
+</html>

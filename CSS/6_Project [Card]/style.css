@@ -1,0 +1,76 @@
+body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 320px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding-bottom: 25px;
+        }
+
+        .card-image-wrapper {
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            /* object-fit: cover; */
+            display: block;
+            border-radius: 20px 20px 0 0;
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        .card-image:hover {
+            transform: scale(1.1);
+        }
+
+        .card-content {
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        .card-heading {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #1a2b4d;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-paragraph {
+            font-size: 0.9rem;
+            color: #5a6b8c;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .card-button {
+            background: linear-gradient(45deg, #0077ff, #00c6ff);
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 150, 255, 0.3);
+            transition: all 0.25s ease;
+        }
+
+        .card-button:hover {
+            background: linear-gradient(45deg, #0088ff, #00d6ff);
+            transform: scale(1.05);
+            box-shadow: 0 2px 12px rgba(0, 150, 255, 0.25);
+        }

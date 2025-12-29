@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1></h1>
+ <button>Click Me!</button>
+ <p></p>
+ <script>
+  // Onclick
+  let h1 = document.querySelector('h1');
+  h1.innerText = 'Events'
+
+  let btn = document.querySelector('button');
+  console.log(btn);
+
+  // btn.onclick = () => {
+  //  console.log("Clicked")
+  // }
+  // btn.ondblclick = () => {
+  //  console.log("clicked two times...")
+  // }
+
+  let p = document.querySelector('p');
+  p.classList.add('para');
+  p.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi, quo fuga enim natus similique unde doloremque voluptate quas impedit doloribus maiores deserunt odit atque ipsum architecto iure autem corporis!Omnis quo delectus nulla illum quos non aliquam. Mollitia animi illum, dolor itaque nam atque ipsam a. Fuga facilis commodi vero rerum rem magni officia omnis excepturi reprehenderit, temporibus dicta.Ratione voluptatem sequi quasi nam, provident eius. Asperiores minus fuga impedit recusandae cupiditate! Nisi cupiditate eos totam, odit officia cumque est! Amet quis ad, beatae exercitationem omnis harum alias veniam?'
+
+  p.onmouseenter = () => {
+   console.log('mouse enter')
+  }
+
+
+  // AddEventListener
+  btn.addEventListener('click', () => {
+   // Your functionality
+   console.log("clicked - addEventListener")
+  })
+  btn.addEventListener('dblclick', () => {
+   console.log("double clicked - addEventListener")
+  })
+ </script>
+</body>
+</html>
