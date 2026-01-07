@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cookies": "^0.9.1",
+    "express": "^5.2.1",
+    "handlebars": "^4.7.8",
+    "hbs": "^4.2.0"
+  }
+}
