@@ -1,0 +1,30 @@
+# ==== Dependencies ====
+node_modules/
+package-lock.json
+yarn.lock
+
+# ==== Environment Files ====
+.env
+.env.local
+.env.*.local
+
+# ==== Logs ====
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==== OS Generated ====
+.DS_Store
+Thumbs.db
+
+# ==== Build / Output ====
+dist/
+build/
+out/
+
+# ==== IDE / Editor ====
+.vscode/
+.idea/
+
