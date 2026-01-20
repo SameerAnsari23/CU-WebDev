@@ -2,6 +2,7 @@
 node_modules/
 package-lock.json
 yarn.lock
+data
 
 # ==== Environment Files ====
 .env
