@@ -6,16 +6,17 @@ const Counter = () => {
 
  console.log("Counter component rendered");
 
- function change() {
-  console.log("Button clicked");
-  setCnt(cnt + 1)
-  console.log(cnt);
- }
+//  function change() {
+//   console.log("Button clicked");
+//   setCnt(cnt + 1)
+//   console.log(cnt);
+//  }
 
   return (
     <div>
        <h1 id='cnt'>Count: {cnt}</h1>
-       <button onClick={change}>Inc</button>
+       {/* <button onClick={change}>Inc</button> */}
+       <button onClick={() => setCnt(cnt + 1)}>Inc</button> 
     </div>
   )
 }
