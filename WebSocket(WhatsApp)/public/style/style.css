@@ -1,0 +1,112 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+h1{
+ text-align: center;
+ margin-top: 5px;
+}
+
+.chat-box {
+ display: flex;
+ margin: auto;
+ height: 91vh;
+ width: 90%;
+ /* border: 5px solid black; */
+}
+
+.user-details{
+ border: 2px solid black;
+ width: 30%;
+ height: 98%;
+ margin: 4px;
+ border-radius: 10px;
+}
+
+.chat-messenger{
+ border: 2px solid black;
+ height: 98%;
+ width: 68%;
+ margin: 4px;
+ border-radius: 10px;
+ position: relative;
+}
+
+.send-message{
+ height: 7%;
+ width: 99%;
+ /* border: 1px solid black; */
+ bottom: 3px;
+ display: flex;
+ position: absolute;
+ margin: 2px;
+ border-radius: 10px;
+}
+
+.message-input{
+ width: 92%;
+ height: 90%;
+ font-size: 25px;
+ padding: 0px;
+ margin-left: 3px;
+ margin-right: 3px;
+}
+
+.gt-logo{
+ font-size: 30px;
+}
+
+.send-button{
+ width: 7%;
+}
+
+.chat-application{
+ display: none;
+}
+
+.current-user {
+ display: flex;
+ justify-content: center;
+ height: 55px;
+ padding-top: 10px;
+ background-color: green;
+ color: white;
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+/* Each chat message wrapper */
+.chat {
+  display: flex;
+  width: 100%;
+}
+
+/* Message bubbles (common styles) */
+.chat-message {
+  max-width: 60%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  word-wrap: break-word;
+  font-size: 15px;
+}
+
+/* My messages → right aligned */
+.my-chat {
+  margin-left: auto;              /* Push to right */
+  background-color: #dcf8c6;      /* WhatsApp green */
+  border-top-right-radius: 0;     /* WhatsApp-style bubble */
+}
+
+/* Other users' messages → left aligned */
+.another-chat {
+  margin-right: auto;             /* Push to left */
+  background-color: #fff;
+  border-top-left-radius: 0;
+  border: 1px solid #ddd;
+}

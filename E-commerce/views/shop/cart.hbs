@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 5px 10px 10px #ccc;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cart-list {
+            width: 800px;
+            margin: auto;
+            list-style: none;
+
+        }
+
+        .cart-list-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .increaseQuantity a:link,
+        .increaseQuantity a:visited,
+        .decreaseQuantity a:visited,
+        .decreaseQuantity a:link {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+    
+    <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <h1>Welcome to Cart Page</h1>
+    Total Price: <span class="totalPrice">{{totalPrice}}</span>
+    <ul class="cart-list">
+        {{#each cart as |c|}}
+        <li class="cart-list-item">
+            <div>
+                <img src={{c.id.imageUrl}} alt="nahi mila">
+            </div>
+            <div>
+                <p>Name: {{c.id.name}}</p>
+                <p>Price: {{c.id.price}}</p>
+                <div>
+                    Quantity:
+                    <a href="/shop/cart/increase/{{c.id._id}}">
+                        <button class="increaseQuantity">+</button>
+                    </a>
+                    {{c.quantity}}
+                    <a href="/shop/cart/decrease/{{c.id._id}}">
+                        <button class="decreaseQuantity">-</button>
+                    </a>
+                    <div id={{c.id._id}}></div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+    <script src="/js/utils/axios.min.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

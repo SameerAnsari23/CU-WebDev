@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Shop</title>
+ <style>
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 5px 10px 10px #ccc;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+<body>
+ {{>navbar}}
+ <h1>Welcome to shop page</h1>
+ {{>shop_category_list products=products}}
+</body>
+</html>

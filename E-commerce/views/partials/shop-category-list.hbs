@@ -1,0 +1,23 @@
+<div class="category">
+        {{#each products as |category|}}
+        <div>{{@key}}</div>
+        <div class="product-list">
+            {{#each category as |p|}}
+            <div class="product-item">
+                <img src={{p.imageUrl}}> <br>
+                <h4>Product name: {{p.name}}</h4>
+                <h4>Product Price: {{p.price}}</h4>
+                <div class="buttons">
+                    <a href="/shop/cart/add/{{p._id}}">
+                        <button>Add to Cart</button>
+                    </a>
+                    <a href="/shop/product/{{p._id}}">
+                        <button>🔍</button>
+                    </a>
+                </div>
+
+            </div>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>

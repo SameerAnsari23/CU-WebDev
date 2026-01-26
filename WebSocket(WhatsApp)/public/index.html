@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style/style.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ <title>WhatsApp</title>
+</head>
+
+<body>
+ <section id="login">
+   <input type="text" id="username" placeholder="Enter your name" >
+   <button id="login-btn">Login</button>
+ </section>
+
+ <div class="chat-application">
+  <h1>WhatsApp : <span class="active-users"></span></h1>
+  <div class="chat-box">
+   <div class="user-details">
+    <div class="current-user">
+
+    </div>
+    <div class="all-user-status">
+     
+    </div>
+   </div>
+   <div class="chat-messenger">
+    <div class="chats"></div>
+    <div class="send-message">
+     <input type="text" placeholder="Type a message" class="message-input">
+     <button class="send-button">
+      <span class="gt-logo">&gt;</span>
+     </button>
+    </div>
+   </div>
+  </div>
+ </div>
+<script src="/socket.io/socket.io.js"></script>                  <!--  Allows browser to talk to server using WebSockets -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <script src="js/script.js"></script>
+</body>
+
+</html>

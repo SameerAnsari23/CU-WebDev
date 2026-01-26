@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Update Page</title>
+ <link rel="stylesheet" href="/styles/navbar.css">
+ <style>
+  form input{
+   margin: 10px 0;
+   font-size: 18px;
+  }
+  h1 {
+   margin: 10px;
+  }
+ </style>
+</head>
+<body>
+ {{>navbar}}
+ <h1>Welcome to Update Page</h1>
+ <img src={{product.imageUrl}} alt="Nahi hai baad mein aana">
+ <form action="/admin/products/update" method="POST">
+ <input type="text" name="name" placeholder="Enter product name" value={{product.name}}><br>
+ <input type="number" name="price" placeholder="Enter price of the product" value={{product.price}}><br>
+ <input type="text" name="description" placeholder="Enter description of the product" value={{product.description}}><br>
+ <input type="text" name="imageUrl" placeholder="Enter image url of the product" value={{product.imageUrl}}><br>
+ <input type="text" name="seller" placeholder="Enter seller name" value={{product.seller}}><br>
+ <input type="hidden" name="id" value={{product._id}}><br>
+ <button type="submit">Submit</button>
+ </form>
+</body>
+</html>
